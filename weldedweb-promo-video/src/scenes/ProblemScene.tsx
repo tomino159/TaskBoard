@@ -29,8 +29,8 @@ export const ProblemScene: React.FC = () => {
     >
       <div style={{ position: "relative" }}>
         <BurstCaption
-          words={["WEEKS", "OF", "WAITING?"]}
-          fontSize={92}
+          words={["CHECKING", "PRICES", "BY", "HAND?"]}
+          fontSize={80}
           color="#F8FAFC"
           staggerFrames={5}
           startFrame={0}
@@ -41,7 +41,7 @@ export const ProblemScene: React.FC = () => {
             left: "50%",
             top: "50%",
             translate: "-50% -50%",
-            width: `${strike * 780}px`,
+            width: `${strike * 900}px`,
             height: 8,
             backgroundColor: "#F87171",
             borderRadius: 4,

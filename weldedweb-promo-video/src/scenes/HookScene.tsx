@@ -32,7 +32,7 @@ export const HookScene: React.FC = () => {
         }}
       />
       <BurstCaption
-        words={["YOUR", "WEBSITE."]}
+        words={["NEVER", "MISS"]}
         fontSize={130}
         color="#F8FAFC"
         staggerFrames={6}
@@ -40,11 +40,11 @@ export const HookScene: React.FC = () => {
       />
       <div style={{ height: 20 }} />
       <BurstCaption
-        words={["IN", "MINUTES."]}
+        words={["A", "PRICE", "DROP."]}
         fontSize={130}
         color="#60A5FA"
         staggerFrames={6}
-        startFrame={18}
+        startFrame={12}
       />
     </AbsoluteFill>
   );

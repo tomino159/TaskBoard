@@ -68,7 +68,7 @@ export const CtaScene: React.FC = () => {
           }),
         }}
       >
-        Build fast. Launch faster.
+        Price smarter. Sell more.
       </Interactive.Div>
       <div
         style={{

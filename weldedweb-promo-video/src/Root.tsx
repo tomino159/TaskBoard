@@ -3,10 +3,10 @@ import { Composition, Folder } from "remotion";
 import { WeldedWebPromoVideo } from "./WeldedWebPromoVideo";
 import { HookScene } from "./scenes/HookScene";
 import { ProblemScene } from "./scenes/ProblemScene";
-import { BuilderScene } from "./scenes/BuilderScene";
-import { TemplatesScene } from "./scenes/TemplatesScene";
-import { PublishScene } from "./scenes/PublishScene";
-import { SpeedScene } from "./scenes/SpeedScene";
+import { MonitorScene } from "./scenes/MonitorScene";
+import { AlertScene } from "./scenes/AlertScene";
+import { MarginScene } from "./scenes/MarginScene";
+import { AutomationScene } from "./scenes/AutomationScene";
 import { CtaScene } from "./scenes/CtaScene";
 
 export const RemotionRoot: React.FC = () => {
@@ -30,32 +30,32 @@ export const RemotionRoot: React.FC = () => {
           height={1080}
         />
         <Composition
-          id="Builder"
-          component={BuilderScene}
+          id="Monitor"
+          component={MonitorScene}
+          durationInFrames={90}
+          fps={30}
+          width={1920}
+          height={1080}
+        />
+        <Composition
+          id="Alert"
+          component={AlertScene}
           durationInFrames={85}
           fps={30}
           width={1920}
           height={1080}
         />
         <Composition
-          id="Templates"
-          component={TemplatesScene}
-          durationInFrames={75}
+          id="Margin"
+          component={MarginScene}
+          durationInFrames={100}
           fps={30}
           width={1920}
           height={1080}
         />
         <Composition
-          id="Publish"
-          component={PublishScene}
-          durationInFrames={75}
-          fps={30}
-          width={1920}
-          height={1080}
-        />
-        <Composition
-          id="Speed"
-          component={SpeedScene}
+          id="Automation"
+          component={AutomationScene}
           durationInFrames={75}
           fps={30}
           width={1920}
@@ -73,7 +73,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="WeldedWebPromoVideo"
         component={WeldedWebPromoVideo}
-        durationInFrames={462}
+        durationInFrames={502}
         fps={30}
         width={1920}
         height={1080}

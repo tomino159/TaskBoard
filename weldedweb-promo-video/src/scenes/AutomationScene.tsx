@@ -1,48 +1,44 @@
 import { AbsoluteFill, Easing, interpolate, useCurrentFrame } from "remotion";
 import { bodyFont, headingFont } from "../fonts";
 
-export const PublishScene: React.FC = () => {
+export const AutomationScene: React.FC = () => {
   const frame = useCurrentFrame();
 
-  const buttonScale = interpolate(frame, [0, 8, 16], [1, 0.9, 1], {
+  const ringScale = interpolate(frame, [0, 40], [1, 2.4], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
     easing: Easing.out(Easing.cubic),
   });
-
-  const ringScale = interpolate(frame, [8, 34], [0.3, 2.2], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
-    easing: Easing.out(Easing.cubic),
-  });
-  const ringOpacity = interpolate(frame, [8, 34], [0.6, 0], {
+  const ringOpacity = interpolate(frame, [0, 40], [0.5, 0], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
 
-  const urlOpacity = interpolate(frame, [26, 38], [0, 1], {
+  const statScale = interpolate(frame, [0, 12], [0.8, 1], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
+    easing: Easing.spring({ damping: 200 }),
+    output: "perceptual-scale",
   });
 
-  const captionOpacity = interpolate(frame, [42, 54], [0, 1], {
+  const captionOpacity = interpolate(frame, [30, 42], [0, 1], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
 
   return (
     <AbsoluteFill
-      name="Publish background"
+      name="Automation background"
       style={{
         backgroundColor: "#05070C",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        gap: 48,
+        gap: 44,
       }}
     >
-      <div style={{ position: "relative", width: 260, height: 260 }}>
+      <div style={{ position: "relative", width: 320, height: 320 }}>
         <div
           style={{
             position: "absolute",
@@ -56,43 +52,48 @@ export const PublishScene: React.FC = () => {
         <div
           style={{
             position: "absolute",
-            inset: 40,
+            inset: 30,
             borderRadius: "50%",
-            backgroundColor: "#2563EB",
-            scale: buttonScale,
+            backgroundColor: "#0B1220",
+            border: "1px solid rgba(148, 163, 184, 0.25)",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            fontFamily: headingFont,
-            fontWeight: 800,
-            fontSize: 32,
-            color: "#F8FAFC",
+            scale: statScale,
           }}
         >
-          Publish
+          <div
+            style={{
+              fontFamily: headingFont,
+              fontWeight: 800,
+              fontSize: 84,
+              color: "#22D3EE",
+            }}
+          >
+            24/7
+          </div>
         </div>
       </div>
       <div
         style={{
           fontFamily: bodyFont,
           fontWeight: 600,
-          fontSize: 34,
-          color: "#4ADE80",
-          opacity: urlOpacity,
+          fontSize: 30,
+          color: "#94A3B8",
         }}
       >
-        ● live at weldedweb.sk/your-site
+        Always watching your market
       </div>
       <div
         style={{
           fontFamily: headingFont,
           fontWeight: 800,
-          fontSize: 64,
+          fontSize: 60,
           color: "#F8FAFC",
           opacity: captionOpacity,
         }}
       >
-        Live in seconds.
+        Zero manual work.
       </div>
     </AbsoluteFill>
   );
