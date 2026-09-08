@@ -42,6 +42,17 @@ export const WordReveal: React.FC<{
             easing: Easing.out(Easing.back(1.6)),
           },
         );
+        const blurProgress = interpolate(
+          frame,
+          [wordStart, wordStart + 9],
+          [1, 0],
+          { extrapolateLeft: "clamp", extrapolateRight: "clamp" },
+        );
+        const rise = interpolate(frame, [wordStart, wordStart + 12], [22, 0], {
+          extrapolateLeft: "clamp",
+          extrapolateRight: "clamp",
+          easing: Easing.out(Easing.cubic),
+        });
         return (
           <span
             key={`${word}-${i}`}
@@ -53,6 +64,8 @@ export const WordReveal: React.FC<{
               textShadow,
               scale: 0.75 + progress * 0.25,
               opacity: progress,
+              translate: `0px ${rise}px`,
+              filter: `blur(${blurProgress * 14}px)`,
               display: "inline-block",
             }}
           >
