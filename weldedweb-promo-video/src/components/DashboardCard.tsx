@@ -54,7 +54,7 @@ export const DashboardCard: React.FC<{
               backgroundColor: "#4ADE80",
             }}
           />
-          LIVE
+          NAŽIVO
         </div>
       </div>
       <div style={{ padding: "32px 40px" }}>{children}</div>

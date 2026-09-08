@@ -45,8 +45,8 @@ export const AlertScene: React.FC = () => {
           width: 760,
           borderRadius: 18,
           backgroundColor: "#0B1220",
-          border: "1px solid #F59E0B",
-          boxShadow: "0 30px 80px rgba(245, 158, 11, 0.2)",
+          border: "1px solid #F97316",
+          boxShadow: "0 30px 80px rgba(249, 115, 22, 0.25)",
           padding: "28px 36px",
           scale: cardPop,
           opacity: cardOpacity,
@@ -60,10 +60,10 @@ export const AlertScene: React.FC = () => {
             fontFamily: bodyFont,
             fontWeight: 700,
             fontSize: 22,
-            color: "#F59E0B",
+            color: "#F97316",
           }}
         >
-          PRICE ALERT
+          CENOVÉ UPOZORNENIE
         </div>
         <div
           style={{
@@ -73,7 +73,7 @@ export const AlertScene: React.FC = () => {
             color: "#F8FAFC",
           }}
         >
-          rivalshop.io dropped to $26.99
+          rivalshop.io znížil cenu na 26,99 €
         </div>
       </div>
       <div
@@ -85,7 +85,7 @@ export const AlertScene: React.FC = () => {
           opacity: captionOpacity,
         }}
       >
-        Instant alerts. Zero delay.
+        Okamžité upozornenia. Bez omeškania.
       </div>
     </AbsoluteFill>
   );

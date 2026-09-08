@@ -3,10 +3,10 @@ import { DashboardCard } from "../components/DashboardCard";
 import { bodyFont, headingFont } from "../fonts";
 
 const rows = [
-  { name: "Your Store", price: "$29.99", highlight: true },
-  { name: "competitor-a.com", price: "$31.49", highlight: false },
-  { name: "rivalshop.io", price: "$28.99", highlight: false },
-  { name: "market-place.com", price: "$30.00", highlight: false },
+  { name: "Váš obchod", price: "29,99 €", highlight: true },
+  { name: "competitor-a.com", price: "31,49 €", highlight: false },
+  { name: "rivalshop.io", price: "28,99 €", highlight: false },
+  { name: "market-place.com", price: "30,00 €", highlight: false },
 ];
 
 export const MonitorScene: React.FC = () => {
@@ -36,9 +36,9 @@ export const MonitorScene: React.FC = () => {
           }),
         }}
       >
-        Prices watched 24/7.
+        Ceny sledované 24/7.
       </div>
-      <DashboardCard title="Competitor price monitor">
+      <DashboardCard title="Prehľad konkurenčnej inteligencie">
         <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
           {rows.map((row, i) => {
             const start = 14 + i * 10;
@@ -60,9 +60,9 @@ export const MonitorScene: React.FC = () => {
                   justifyContent: "space-between",
                   padding: "18px 24px",
                   borderRadius: 12,
-                  backgroundColor: row.highlight ? "#1D4ED8" : "#050710",
+                  backgroundColor: row.highlight ? "#EA580C" : "#050710",
                   border: row.highlight
-                    ? "1px solid #60A5FA"
+                    ? "1px solid #FB923C"
                     : "1px solid rgba(148, 163, 184, 0.15)",
                   translate: `${slide}px 0px`,
                   opacity,

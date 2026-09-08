@@ -27,22 +27,22 @@ export const HookScene: React.FC = () => {
           height: 900,
           borderRadius: "50%",
           background:
-            "radial-gradient(circle, rgba(59,130,246,0.35) 0%, rgba(5,7,12,0) 70%)",
+            "radial-gradient(circle, rgba(249,115,22,0.35) 0%, rgba(5,7,12,0) 70%)",
           opacity: glow,
         }}
       />
       <BurstCaption
-        words={["NEVER", "MISS"]}
-        fontSize={130}
+        words={["ZÍSKAJTE", "NÁSKOK."]}
+        fontSize={120}
         color="#F8FAFC"
         staggerFrames={6}
         startFrame={0}
       />
       <div style={{ height: 20 }} />
       <BurstCaption
-        words={["A", "PRICE", "DROP."]}
-        fontSize={130}
-        color="#60A5FA"
+        words={["PRED", "KONKURENCIOU."]}
+        fontSize={120}
+        color="#FB923C"
         staggerFrames={6}
         startFrame={12}
       />

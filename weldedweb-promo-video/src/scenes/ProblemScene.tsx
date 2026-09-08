@@ -29,7 +29,7 @@ export const ProblemScene: React.FC = () => {
     >
       <div style={{ position: "relative" }}>
         <BurstCaption
-          words={["CHECKING", "PRICES", "BY", "HAND?"]}
+          words={["KONTROLUJETE", "CENY", "RUČNE?"]}
           fontSize={80}
           color="#F8FAFC"
           staggerFrames={5}
@@ -54,11 +54,11 @@ export const ProblemScene: React.FC = () => {
           fontFamily: headingFont,
           fontWeight: 700,
           fontSize: 64,
-          color: "#22D3EE",
+          color: "#FB923C",
           opacity: answerOpacity,
         }}
       >
-        Not anymore.
+        Už nie.
       </div>
     </AbsoluteFill>
   );

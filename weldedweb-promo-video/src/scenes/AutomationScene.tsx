@@ -44,7 +44,7 @@ export const AutomationScene: React.FC = () => {
             position: "absolute",
             inset: 0,
             borderRadius: "50%",
-            border: "3px solid #22D3EE",
+            border: "3px solid #FB923C",
             scale: ringScale,
             opacity: ringOpacity,
           }}
@@ -67,7 +67,7 @@ export const AutomationScene: React.FC = () => {
               fontFamily: headingFont,
               fontWeight: 800,
               fontSize: 84,
-              color: "#22D3EE",
+              color: "#F97316",
             }}
           >
             24/7
@@ -82,7 +82,7 @@ export const AutomationScene: React.FC = () => {
           color: "#94A3B8",
         }}
       >
-        Always watching your market
+        Nepretržite sleduje váš trh
       </div>
       <div
         style={{
@@ -93,7 +93,7 @@ export const AutomationScene: React.FC = () => {
           opacity: captionOpacity,
         }}
       >
-        Zero manual work.
+        Žiadna ručná práca.
       </div>
     </AbsoluteFill>
   );

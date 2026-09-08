@@ -28,7 +28,7 @@ export const CtaScene: React.FC = () => {
           height: 900,
           borderRadius: "50%",
           background:
-            "radial-gradient(circle, rgba(34,211,238,0.25) 0%, rgba(5,7,12,0) 70%)",
+            "radial-gradient(circle, rgba(249,115,22,0.28) 0%, rgba(5,7,12,0) 70%)",
         }}
       />
       <Interactive.Div
@@ -59,7 +59,7 @@ export const CtaScene: React.FC = () => {
           fontFamily: headingFont,
           fontWeight: 700,
           fontSize: 46,
-          color: "#60A5FA",
+          color: "#FB923C",
           marginTop: 28,
           opacity: interpolate(frame, [20, 32], [0, 1], {
             extrapolateLeft: "clamp",
@@ -68,7 +68,7 @@ export const CtaScene: React.FC = () => {
           }),
         }}
       >
-        Price smarter. Sell more.
+        Ceny sledované. Marže chránené.
       </Interactive.Div>
       <div
         style={{

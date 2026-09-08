@@ -49,7 +49,7 @@ export const MarginScene: React.FC = () => {
           }),
         }}
       >
-        Protect your margin.
+        Ochráňte svoju maržu.
       </div>
       <div style={{ display: "flex", gap: 80, alignItems: "flex-end" }}>
         <div
@@ -77,7 +77,7 @@ export const MarginScene: React.FC = () => {
               textAlign: "center",
             }}
           >
-            Doing nothing
+            Bez zásahu
           </div>
         </div>
         <div
@@ -105,7 +105,7 @@ export const MarginScene: React.FC = () => {
               textAlign: "center",
             }}
           >
-            With WeldedWeb
+            S WeldedWeb
           </div>
         </div>
       </div>
@@ -118,7 +118,7 @@ export const MarginScene: React.FC = () => {
           opacity: tagOpacity,
         }}
       >
-        Suggested price: $28.49 (+$1.50 margin)
+        Odporúčaná cena: 28,49 € (+1,50 € marža)
       </div>
       <div
         style={{
@@ -129,7 +129,7 @@ export const MarginScene: React.FC = () => {
           opacity: captionOpacity,
         }}
       >
-        Reprice automatically. Stay profitable.
+        Automatická zmena ceny. Zostaňte ziskoví.
       </div>
     </AbsoluteFill>
   );
