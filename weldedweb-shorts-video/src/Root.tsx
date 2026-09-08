@@ -2,6 +2,7 @@ import "./index.css";
 import { Composition, Folder } from "remotion";
 import { WeldedWebShorts } from "./WeldedWebShorts";
 import { HookScene } from "./scenes/HookScene";
+import { ProblemStackScene } from "./scenes/ProblemStackScene";
 import { LogoRevealScene } from "./scenes/LogoRevealScene";
 import { LightWipeScene } from "./scenes/LightWipeScene";
 import { SubHeadlineScene } from "./scenes/SubHeadlineScene";
@@ -18,6 +19,14 @@ export const RemotionRoot: React.FC = () => {
           id="Hook"
           component={HookScene}
           durationInFrames={100}
+          fps={30}
+          width={1080}
+          height={1920}
+        />
+        <Composition
+          id="ProblemStack"
+          component={ProblemStackScene}
+          durationInFrames={70}
           fps={30}
           width={1080}
           height={1920}
@@ -49,7 +58,7 @@ export const RemotionRoot: React.FC = () => {
         <Composition
           id="Dashboard1"
           component={DashboardScene1}
-          durationInFrames={55}
+          durationInFrames={70}
           fps={30}
           width={1080}
           height={1920}
@@ -82,7 +91,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="WeldedWebShorts"
         component={WeldedWebShorts}
-        durationInFrames={420}
+        durationInFrames={505}
         fps={30}
         width={1080}
         height={1920}

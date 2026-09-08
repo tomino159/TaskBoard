@@ -1,5 +1,6 @@
 import { AbsoluteFill } from "remotion";
 import { BottomGlow } from "../components/GlowBackground";
+import { AnimatedGradientMesh } from "../components/AnimatedGradientMesh";
 import { WordReveal } from "../components/WordReveal";
 import { ParticleField } from "../components/ParticleField";
 import { CameraPunchIn } from "../components/CameraPunchIn";
@@ -15,6 +16,7 @@ export const HookScene: React.FC = () => {
             justifyContent: "center",
           }}
         >
+          <AnimatedGradientMesh />
           <BottomGlow />
           <ParticleField count={26} seedOffset={0} />
           <WordReveal

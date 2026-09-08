@@ -6,6 +6,7 @@ import {
   useCurrentFrame,
 } from "remotion";
 import { CenterGlow } from "../components/GlowBackground";
+import { AnimatedGradientMesh } from "../components/AnimatedGradientMesh";
 import { ParticleField } from "../components/ParticleField";
 import { CameraPunchIn } from "../components/CameraPunchIn";
 import { headingFont } from "../fonts";
@@ -39,6 +40,7 @@ export const SubHeadlineScene: React.FC = () => {
             gap: 24,
           }}
         >
+          <AnimatedGradientMesh />
           <CenterGlow />
           <ParticleField count={20} seedOffset={300} />
           <Interactive.Div
